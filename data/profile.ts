@@ -9,7 +9,7 @@ export const profile: Profile = {
   email: 'reshma.a.devops@gmail.com',
   resumePath: '/resume',
   resumePdfUrl: '/resume/reshma-a-devops-resume.pdf',
-  profileImage: '/images/personal/reshma.png',
+  profileImage: '/images/personal/Reshma.png',
   heroTagline:
     'DevOps Engineer building robust CI/CD pipelines, cloud infrastructure, and container orchestration with AWS, Jenkins, Docker, and Kubernetes.',
   heroSubtext:
