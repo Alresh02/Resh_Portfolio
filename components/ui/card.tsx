@@ -9,9 +9,9 @@ export function Card({ children, className }: CardProps) {
   return (
     <div
       className={cn(
-        'group relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-xl overflow-hidden',
-        'transition-all duration-500 hover:border-white/[0.12] hover:bg-white/[0.04]',
-        'hover:shadow-2xl hover:shadow-primary/[0.05]',
+        'group relative rounded-2xl border border-[rgba(57,255,20,0.18)] bg-[#0D1511]/90 backdrop-blur-xl overflow-hidden',
+        'transition-all duration-500 hover:border-primary/40 hover:bg-[#0D1511]',
+        'hover:shadow-2xl hover:shadow-primary/10',
         className
       )}
     >

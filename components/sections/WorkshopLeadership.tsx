@@ -41,7 +41,7 @@ export function WorkshopLeadership() {
         <div className="max-w-4xl mx-auto mt-12">
           <ScrollReveal direction="up" delay={0.2}>
             <GlassPanel className="p-8 md:p-12 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/30 transition-colors duration-500" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/20 transition-colors duration-500" />
               
               <div className="relative z-10">
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8">
@@ -118,7 +118,7 @@ export function WorkshopLeadership() {
                   <h4 className="text-sm font-semibold text-white/90 mb-4 uppercase tracking-widest">Key Topics Covered</h4>
                   <div className="flex flex-wrap gap-3">
                     {ws.topics.map((topic) => (
-                      <span key={topic} className="px-4 py-2 bg-black/40 border border-white/10 rounded-lg text-sm text-white/90">
+                      <span key={topic} className="px-4 py-2 bg-[#0A100D] border border-primary/20 rounded-lg text-sm text-white/90">
                         {topic}
                       </span>
                     ))}

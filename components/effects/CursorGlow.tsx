@@ -10,7 +10,7 @@ export function CursorGlow() {
       className="fixed pointer-events-none -z-10 w-[500px] h-[500px] rounded-full opacity-20 blur-[100px] transition-transform duration-200 ease-out"
       style={{
         background:
-          'radial-gradient(circle, rgba(124,58,237,0.3) 0%, transparent 70%)',
+          'radial-gradient(circle, rgba(57,255,20,0.25) 0%, transparent 70%)',
         transform: `translate(${x - 250}px, ${y - 250}px)`,
       }}
       aria-hidden="true"

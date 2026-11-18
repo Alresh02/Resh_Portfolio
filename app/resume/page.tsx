@@ -35,14 +35,14 @@ export default function ResumePage() {
               {/* Profile Image */}
               <div className="relative shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-full blur-2xl opacity-50" />
-                <div className="relative w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-full border border-white/10 bg-[#0a0a1a]/50 p-1.5 backdrop-blur-sm">
+                <div className="relative w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-full border border-primary/30 bg-[#0A100D]/80 p-1.5 backdrop-blur-sm shadow-[0_0_20px_rgba(57,255,20,0.2)]">
                   <div className="w-full h-full rounded-full overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-primary/15 to-transparent mix-blend-overlay z-10" />
                     <Image
                       src={profile.profileImage}
                       alt={profile.name}
                       fill
-                      className="object-cover"
+                      className="object-cover object-[center_20%]"
                       sizes="180px"
                       priority
                     />
@@ -143,7 +143,7 @@ export default function ResumePage() {
                     {group.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="text-xs px-3 py-1.5 bg-white/[0.05] border border-white/[0.08] rounded-lg text-white/80 hover:bg-white/[0.1] hover:border-primary/30 transition-colors"
+                        className="text-xs px-3 py-1.5 bg-[#0A100D] border border-primary/20 rounded-lg text-white/90 hover:bg-[#0D1511] hover:border-primary/50 transition-colors"
                       >
                         {skill}
                       </span>
@@ -171,7 +171,7 @@ export default function ResumePage() {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="p-5 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/[0.12] transition-all duration-300"
+                  className="p-5 rounded-xl border border-[rgba(57,255,20,0.18)] bg-[#0A100D]/60 hover:bg-[#0A100D] hover:border-primary/40 transition-all duration-300"
                 >
                   <div className="min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
@@ -194,7 +194,7 @@ export default function ResumePage() {
                       {project.techStack.map((tech) => (
                         <span
                           key={tech}
-                          className="text-xs px-2.5 py-1 bg-white/[0.05] border border-white/[0.05] rounded-md text-white/70"
+                          className="text-xs px-2.5 py-1 bg-[#050807] border border-primary/20 rounded-md text-white/80"
                         >
                           {tech}
                         </span>
@@ -246,7 +246,7 @@ export default function ResumePage() {
                       {ws.topics.map((topic) => (
                         <span
                           key={topic}
-                          className="text-xs px-2.5 py-1 bg-white/[0.05] border border-white/[0.05] rounded-md text-white/70"
+                          className="text-xs px-2.5 py-1 bg-[#0A100D] border border-primary/20 rounded-md text-white/80"
                         >
                           {topic}
                         </span>
@@ -296,7 +296,7 @@ export default function ResumePage() {
           <div className="flex flex-col items-center gap-4 text-center">
             <button
               onClick={() => window.print()}
-              className="inline-flex items-center gap-2 rounded-xl font-semibold text-sm px-8 py-3.5 bg-gradient-to-r from-primary to-accent text-white shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+              className="inline-flex items-center gap-2 rounded-xl font-bold text-sm px-8 py-3.5 bg-gradient-to-r from-primary to-accent text-[#050807] shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
             >
               <Download size={18} />
               Print / Save as PDF

@@ -35,7 +35,7 @@ export function Navbar() {
       className={cn(
         'fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-transparent',
         isScrolled
-          ? 'bg-black/60 backdrop-blur-xl border-white/[0.08] py-3'
+          ? 'bg-[#050807]/80 backdrop-blur-xl border-[rgba(57,255,20,0.15)] py-3'
           : 'bg-transparent py-5'
       )}
     >
@@ -54,7 +54,7 @@ export function Navbar() {
               <li key={link.href}>
                 <Link
                   href={isHome ? link.href : `/${link.href}`}
-                  className="text-sm font-medium text-muted-foreground hover:text-white transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -83,7 +83,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-[#0a0a1a]/95 backdrop-blur-xl border-b border-white/[0.08] p-6 flex flex-col gap-6 md:hidden shadow-2xl"
+            className="absolute top-full left-0 right-0 bg-[#0A100D]/95 backdrop-blur-xl border-b border-[rgba(57,255,20,0.18)] p-6 flex flex-col gap-6 md:hidden shadow-2xl"
           >
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (

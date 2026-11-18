@@ -52,7 +52,7 @@ export function Hero() {
             <ScrollReveal direction="up" delay={0.2}>
               <Badge className="mb-6 p-2">{profile.title}</Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-                Hi, I'm <span className="bg-gradient-to-r from-primary via-purple-300 to-accent bg-clip-text text-transparent">{profile.name.split(' ')[0]}</span> 👋
+                Hi, I'm <span className="bg-gradient-to-r from-primary via-emerald-300 to-accent bg-clip-text text-transparent">{profile.name.split(' ')[0]}</span> 👋
               </h1>
             </ScrollReveal>
 
@@ -84,14 +84,14 @@ export function Hero() {
               {/* Glow behind image */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-full blur-3xl opacity-50" />
 
-              <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full border border-white/10 bg-[#0a0a1a]/50 p-2 backdrop-blur-sm">
+              <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full border border-primary/30 bg-[#0A100D]/80 p-2 backdrop-blur-sm shadow-[0_0_30px_rgba(57,255,20,0.15)]">
                 <div className="w-full h-full rounded-full overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/15 to-transparent mix-blend-overlay z-10" />
                   <Image
                     src={profile.profileImage}
                     alt={profile.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-[center_20%]"
                     sizes="(max-width: 768px) 280px, 400px"
                     priority
                   />
@@ -102,7 +102,7 @@ export function Hero() {
               {floatingTech.map((tech) => (
                 <motion.div
                   key={tech.name}
-                  className={`absolute ${tech.position} z-20 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-2 md:px-4 md:py-2 rounded-xl flex items-center gap-2 shadow-xl shadow-primary/10`}
+                  className={`absolute ${tech.position} z-20 bg-[#0D1511]/90 backdrop-blur-md border border-[rgba(57,255,20,0.2)] px-3 py-2 md:px-4 md:py-2 rounded-xl flex items-center gap-2 shadow-xl shadow-primary/10 hover:border-primary/50 transition-colors`}
                   animate={{
                     y: [0, -10, 0],
                   }}

@@ -3,37 +3,37 @@
 export function AuroraBackground() {
   return (
     <div className="fixed inset-0 -z-30 overflow-hidden">
-      {/* Base dark gradient */}
-      <div className="absolute inset-0 bg-[#050510]" />
+      {/* Base dark space-inspired background */}
+      <div className="absolute inset-0 bg-[#050807]" />
 
-      {/* Aurora blob 1 – purple */}
+      {/* Aurora blob 1 – subtle neon green glow */}
       <div
-        className="absolute -top-1/2 -left-1/4 w-[80vw] h-[80vw] rounded-full opacity-20 blur-[120px] animate-aurora"
+        className="absolute -top-1/2 -left-1/4 w-[80vw] h-[80vw] rounded-full opacity-15 blur-[120px] animate-aurora"
         style={{
           background:
-            'radial-gradient(circle, rgba(124,58,237,0.6) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(57,255,20,0.4) 0%, transparent 70%)',
           backgroundSize: '300% 300%',
         }}
       />
 
-      {/* Aurora blob 2 – cyan */}
+      {/* Aurora blob 2 – emerald / secondary green accent */}
       <div
-        className="absolute -bottom-1/3 -right-1/4 w-[70vw] h-[70vw] rounded-full opacity-15 blur-[120px] animate-aurora"
+        className="absolute -bottom-1/3 -right-1/4 w-[70vw] h-[70vw] rounded-full opacity-10 blur-[120px] animate-aurora"
         style={{
           background:
-            'radial-gradient(circle, rgba(6,182,212,0.5) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(0,230,118,0.35) 0%, transparent 70%)',
           backgroundSize: '300% 300%',
           animationDelay: '3s',
           animationDirection: 'reverse',
         }}
       />
 
-      {/* Aurora blob 3 – pink */}
+      {/* Aurora blob 3 – deep atmospheric forest glow */}
       <div
         className="absolute top-1/3 left-1/2 w-[50vw] h-[50vw] rounded-full opacity-10 blur-[100px] animate-aurora"
         style={{
           background:
-            'radial-gradient(circle, rgba(236,72,153,0.4) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(16,185,129,0.3) 0%, transparent 70%)',
           backgroundSize: '300% 300%',
           animationDelay: '5s',
         }}

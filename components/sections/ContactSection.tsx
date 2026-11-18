@@ -16,7 +16,10 @@ export function ContactSection() {
 
         <ScrollReveal direction="up" delay={0.2} className="max-w-2xl mx-auto mt-12 space-y-8">
           <p className="text-xl text-white/80 leading-relaxed">
-            Whether you have a question, a project in mind, or just want to say hi, my inbox is always open. I'll try my best to get back to you!
+            I'm always interested in discussing new opportunities and challenging projects. Let's build something amazing together.
+          </p>
+          <p className="text-xl text-white/80 leading-relaxed">
+            Feel free to reach out.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">

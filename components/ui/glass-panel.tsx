@@ -10,9 +10,9 @@ export function GlassPanel({ children, className, hover = false }: GlassPanelPro
   return (
     <div
       className={cn(
-        'rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-xl',
+        'rounded-2xl border border-[rgba(57,255,20,0.18)] bg-[#0D1511]/80 backdrop-blur-xl',
         hover &&
-          'transition-all duration-300 hover:bg-white/[0.06] hover:border-white/[0.12] hover:shadow-xl hover:shadow-primary/5',
+          'transition-all duration-300 hover:bg-[#0D1511] hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10',
         className
       )}
     >

@@ -21,7 +21,7 @@ const orbitTechs: OrbitTech[] = [
 
 export function TechStackUniverse() {
   return (
-    <section className="py-8 relative overflow-hidden bg-black/60">
+    <section className="py-8 relative overflow-hidden bg-[#0A100D]/60">
       <div className="container mx-auto px-6 relative z-10">
         <ScrollReveal>
           <SectionHeading title="Tech Stack Universe" subtitle="The tools orbiting my DevOps workflow." />
@@ -31,15 +31,15 @@ export function TechStackUniverse() {
           
           {/* Central Node */}
           <ScrollReveal delay={0.2} className="relative z-20">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50 shadow-[0_0_50px_rgba(124,58,237,0.4)] backdrop-blur-md">
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50 shadow-[0_0_50px_rgba(57,255,20,0.4)] backdrop-blur-md">
               <span className="font-bold text-xl text-white tracking-wider">{profile.name.split(' ')[0]}</span>
             </div>
           </ScrollReveal>
 
           {/* Orbit Rings */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[240px] md:h-[240px] rounded-full border border-white/5" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] md:w-[360px] md:h-[360px] rounded-full border border-white/5" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] md:w-[480px] md:h-[480px] rounded-full border border-white/5 hidden md:block" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[240px] md:h-[240px] rounded-full border border-primary/10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] md:w-[360px] md:h-[360px] rounded-full border border-primary/10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] md:w-[480px] md:h-[480px] rounded-full border border-primary/10 hidden md:block" />
 
           {/* Orbiting Tech Nodes */}
           {orbitTechs.map((tech, i) => (

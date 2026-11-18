@@ -9,6 +9,7 @@ interface Particle {
   vy: number;
   size: number;
   alpha: number;
+  isGreen?: boolean;
 }
 
 export function ParticleField() {
@@ -41,6 +42,7 @@ export function ParticleField() {
         vy: (Math.random() - 0.5) * 0.3,
         size: Math.random() * 2 + 0.5,
         alpha: Math.random() * 0.5 + 0.1,
+        isGreen: Math.random() < 0.25, // Occasional soft green particle
       });
     }
 
@@ -59,7 +61,9 @@ export function ParticleField() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${p.alpha})`;
+        ctx.fillStyle = p.isGreen
+          ? `rgba(57, 255, 20, ${p.alpha * 0.9})`
+          : `rgba(255, 255, 255, ${p.alpha})`;
         ctx.fill();
       });
 
@@ -74,7 +78,7 @@ export function ParticleField() {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(124, 58, 237, ${0.1 * (1 - dist / 150)})`;
+            ctx.strokeStyle = `rgba(57, 255, 20, ${0.08 * (1 - dist / 150)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

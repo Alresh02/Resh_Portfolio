@@ -7,10 +7,10 @@ import { ScrollReveal } from '@/components/shared/ScrollReveal';
 
 export function FeaturedProjects() {
   return (
-    <section id="projects" className="py-8 relative bg-black/40">
+    <section id="projects" className="py-8 relative bg-[#0A100D]/50">
       <div className="container mx-auto px-6">
         <ScrollReveal>
-          <SectionHeading title="Featured Projects" subtitle="A selection of my best work across web and desktop." />
+          <SectionHeading title="resh@Resh-PC:~$ ls -a Featured Projects" subtitle="A selection of my best work across web and desktop." />
         </ScrollReveal>
 
         <div className="flex flex-col gap-20 mt-16 max-w-7xl mx-auto">
@@ -23,7 +23,7 @@ export function FeaturedProjects() {
                 <ScrollReveal>
                   <div className="flex items-center gap-4 mb-4">
                     <h3 className="text-2xl font-bold text-white">{category}</h3>
-                    <div className="h-px bg-white/10 flex-grow"></div>
+                    <div className="h-px bg-primary/20 flex-grow"></div>
                   </div>
                 </ScrollReveal>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

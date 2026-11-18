@@ -43,7 +43,7 @@ export function DevelopmentProcess() {
               const Icon = iconMap[step.icon];
               return (
                 <ScrollReveal key={step.title} direction="up" delay={0.1 * idx} className="relative z-10 flex flex-col items-center">
-                  <div className="w-24 h-24 mb-6 rounded-full bg-[#050510] border-2 border-primary/30 flex items-center justify-center shadow-[0_0_20px_rgba(124,58,237,0.2)] group-hover:border-primary transition-colors">
+                  <div className="w-24 h-24 mb-6 rounded-full bg-[#050807] border-2 border-primary/30 flex items-center justify-center shadow-[0_0_20px_rgba(57,255,20,0.2)] group-hover:border-primary transition-colors">
                     <Icon className="w-10 h-10 text-primary" />
                   </div>
                   <h4 className="text-lg font-bold text-white mb-2 text-center">{step.title}</h4>

@@ -10,9 +10,9 @@ import { Monitor, Database, Laptop, Wrench, Lightbulb } from 'lucide-react';
 const iconMap: Record<string, React.ReactNode> = {
   Monitor: <Monitor className="w-6 h-6 text-primary" />,
   Database: <Database className="w-6 h-6 text-accent" />,
-  Laptop: <Laptop className="w-6 h-6 text-pink-400" />,
-  Wrench: <Wrench className="w-6 h-6 text-yellow-400" />,
-  Lightbulb: <Lightbulb className="w-6 h-6 text-purple-400" />,
+  Laptop: <Laptop className="w-6 h-6 text-emerald-400" />,
+  Wrench: <Wrench className="w-6 h-6 text-lime-400" />,
+  Lightbulb: <Lightbulb className="w-6 h-6 text-green-300" />,
 };
 
 export function SkillsArchitecture() {
@@ -20,7 +20,7 @@ export function SkillsArchitecture() {
     <section id="skills" className="py-24 relative">
       <div className="container mx-auto px-6">
         <ScrollReveal>
-          <SectionHeading title="Skills Architecture" subtitle="The technologies and concepts I leverage to build robust applications." />
+          <SectionHeading title="resh@Resh-PC:~$ sudo Skills Architecture" subtitle="The technologies and concepts I leverage to build robust applications." />
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -28,7 +28,7 @@ export function SkillsArchitecture() {
             <ScrollReveal key={group.category} direction="up" delay={0.1 * (idx + 1)}>
               <GlassPanel className="p-8 h-full" hover>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="p-3 bg-white/[0.05] rounded-xl border border-white/[0.05]">
+                  <div className="p-3 bg-primary/10 rounded-xl border border-primary/20">
                     {iconMap[group.icon]}
                   </div>
                   <h3 className="text-xl font-semibold text-white">{group.category}</h3>

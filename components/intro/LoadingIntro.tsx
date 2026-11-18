@@ -45,7 +45,7 @@ export function LoadingIntro() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#050510]"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#050807]"
         >
           <div className="font-mono text-sm sm:text-base md:text-lg text-primary tracking-wider">
             <motion.div

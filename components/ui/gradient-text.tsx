@@ -14,7 +14,7 @@ export function GradientText({
   return (
     <Tag
       className={cn(
-        'bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent',
+        'bg-gradient-to-r from-white via-green-100 to-primary bg-clip-text text-transparent',
         className
       )}
     >

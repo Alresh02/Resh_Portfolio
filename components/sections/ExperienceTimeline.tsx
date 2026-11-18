@@ -7,10 +7,10 @@ import { ScrollReveal } from '@/components/shared/ScrollReveal';
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-8 relative bg-black/20">
+    <section id="experience" className="py-8 relative bg-[#0A100D]/40">
       <div className="container mx-auto px-6">
         <ScrollReveal>
-          <SectionHeading title="Experience" subtitle="My professional journey and career progression." />
+          <SectionHeading title="resh@Resh-PC:~$ ls Experience" subtitle="My professional journey and career progression." />
         </ScrollReveal>
 
         <div className="max-w-5xl mx-auto mt-16">

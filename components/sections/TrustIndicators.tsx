@@ -11,9 +11,9 @@ const stats = [
 
 export function TrustIndicators() {
   return (
-    <section className="py-12 border-y border-white/[0.05] bg-white/[0.01]">
+    <section className="py-12 border-y border-[rgba(57,255,20,0.18)] bg-[#0A100D]/40">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x divide-white/[0.05]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x divide-primary/10">
           <ScrollReveal direction="up" delay={0.1} className="text-center px-4">
             <div className="text-sm text-primary mb-2 uppercase tracking-widest font-medium">Role</div>
             <div className="text-xl md:text-2xl font-semibold text-white">DevOps</div>

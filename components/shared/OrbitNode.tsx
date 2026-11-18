@@ -22,10 +22,10 @@ export function OrbitNode({ tech, angle }: OrbitNodeProps) {
       } as React.CSSProperties}
     >
       <div 
-        className="w-full h-full rounded-full bg-[#050510] border-2 border-white/20 p-2.5 flex items-center justify-center transition-all duration-300 hover:scale-125 hover:border-primary group-hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]"
+        className="w-full h-full rounded-full bg-[#050807] border-2 border-[rgba(57,255,20,0.2)] p-2.5 flex items-center justify-center transition-all duration-300 hover:scale-125 hover:border-primary group-hover:shadow-[0_0_20px_rgba(57,255,20,0.5)]"
         style={{ borderColor: tech.color }}
       >
-        <span className="font-bold text-xs text-white absolute -top-8 opacity-0 group-hover:opacity-100 transition-opacity bg-black/80 px-2 py-1 rounded backdrop-blur-md pointer-events-none whitespace-nowrap">
+        <span className="font-bold text-xs text-white absolute -top-8 opacity-0 group-hover:opacity-100 transition-opacity bg-[#0D1511]/90 border border-primary/20 px-2 py-1 rounded backdrop-blur-md pointer-events-none whitespace-nowrap">
           {tech.name}
         </span>
         {/* Icon image or fallback text */}

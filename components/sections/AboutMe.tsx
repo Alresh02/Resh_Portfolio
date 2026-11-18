@@ -17,7 +17,7 @@ export function AboutMe() {
     <section id="about" className="py-8 relative">
       <div className="container mx-auto px-6">
         <ScrollReveal>
-          <SectionHeading title="Who Am I?" subtitle="A brief look into my journey and specialization." />
+          <SectionHeading title="resh@Resh-PC:~$ Whoami" subtitle="A brief look into my journey and specialization." />
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
