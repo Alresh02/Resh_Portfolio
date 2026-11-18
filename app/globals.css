@@ -6,6 +6,7 @@
   :root {
     --orbit-radius: 120px;
   }
+
   @media (min-width: 768px) {
     :root {
       --orbit-radius: 180px;
@@ -46,8 +47,10 @@ body {
 
 /* ──────────── Print / PDF Reset ──────────── */
 @media print {
+
   /* Force white background and black text everywhere */
-  html, body {
+  html,
+  body {
     background: #ffffff !important;
     color: #000000 !important;
     -webkit-print-color-adjust: exact;
@@ -63,13 +66,20 @@ body {
   }
 
   /* Prevent orphans/widows */
-  p, li, h1, h2, h3, h4 {
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4 {
     orphans: 3;
     widows: 3;
   }
 
   /* Prevent page breaks inside cards / experience blocks */
-  section, article, [class*="rounded"] {
+  section,
+  article,
+  [class*="rounded"] {
     break-inside: avoid;
   }
 
